@@ -2,17 +2,17 @@ public class Main {
     public static void main(String[] args) {
       //Task#1
       System.out.println("Задача 1");
-      byte Alpha = 10;
-      short Beta = 129;
-      int Gamma = 2782;
-      long Delta = 20332l;
-      float Goro = 2.345f;
+      byte alpha = 10;
+      short beta = 129;
+      int gamma = 2782;
+      long delta = 20332l;
+      float goro = 2.345f;
       double deadInside = 4.4657234;
-      System.out.println("Значение переменной " + "Alpha " + "с типом " + "byte " + "равно " + Alpha);
-        System.out.println("Значения переменной " + " Beta " + "с типом " + "short " + "равно " + Beta);
-        System.out.println("Значение с переменной " + "Gamma " + "с типом " + "int " + "равно " + Gamma);
-        System.out.println("Значение переменной " + "Delta " + "с типом " + "long " + "равно " + Delta);
-        System.out.println("Значение переменной " + "Goro " + "с типом " + " float " + "равно " + Goro);
+      System.out.println("Значение переменной " + "alpha " + "с типом " + "byte " + "равно " + alpha);
+        System.out.println("Значения переменной " + " beta " + "с типом " + "short " + "равно " + beta);
+        System.out.println("Значение с переменной " + "gamma " + "с типом " + "int " + "равно " + gamma);
+        System.out.println("Значение переменной " + "delta " + "с типом " + "long " + "равно " + delta);
+        System.out.println("Значение переменной " + "goro " + "с типом " + " float " + "равно " + goro);
         System.out.println("Значение с переменной " + "deadInside " + "c типом " + " double " + "равно " + deadInside);
 
         //Task#2
