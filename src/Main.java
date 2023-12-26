@@ -48,19 +48,13 @@ public class Main {
         //Task#5
         System.out.println(" Task 5 ");
         int kidAge1 = 4;
-        if (kidAge1 < 5) {
-            System.out.println("Если возраст ребенка равен " + kidAge1 + ", то ему нельзя кататься на аттракционе");
+        if(kidAge1 < 5) {
+            System.out.println("Если ребенку " + kidAge1 + " года то он не может кататься на аттракционе.");
+        } else if(kidAge1 > 5 && kidAge1 < 14) {
+            System.out.println("Если ребенку больше 5, но меньше 14 лет, то он может кататься в сопровождении взрослого, если взрослого нет - нельзя");
         } else {
-            System.out.println("Если возраст ребенка больше " + 14 + ", то ему можно кататься на аттракционе ");
-        }
-        if (kidAge1 > 5 && kidAge1 < 14) {
-            System.out.println("Если возраст ребенка равен " + kidAge1 + ", то ему можно кататься в сопровождении взрослого.");
-        } else {
-            System.out.println("Если возраст ребенка равен " + 16 + ", то ему можно кататься на аттракционе");
-        }
+            System.out.println("Если ребенок старше 14 лет, то он может кататься без сопровождения взрослого");
 
-        if (kidAge1 > 14) {
-            System.out.println("Если возраст ребенка равен " + kidAge1 + ", то ему можно кататься на аттракционе");
         }
         //Task#6
         System.out.println("Task 6 ");
@@ -68,33 +62,27 @@ public class Main {
         int seatPlace = 60;
         if (trainCapacity >= 0 && trainCapacity <= 100) {
             System.out.println(trainCapacity + " в вагоне есть места");
-        } else {
-            System.out.println("В вагоне нет мест");
-        }
-        if (seatPlace >= 0 && seatPlace <= 59) {
-            System.out.println("Если количество мест " + seatPlace + " то есть место");
-        } else {
-            System.out.println("В вагоне нет мест для сидения, но есть места для стоячих");
-        }
-        if (trainCapacity == 102) {
-            System.out.println("Вагон полностью забит");
-        }
-        //Task#7
-        System.out.println(" Task 7 ");
+        } else if(seatPlace >=0 && seatPlace <=59) {
+            System.out.println(seatPlace + "в вагоне есть свободные сидения ");
 
+        } else {
+            System.out.println("Вагон полностью забит");
+
+        }
+
+        //Task#7
+        System.out.println("Task 7 ");
         int one = 1;
         int two = 2;
         int three = 3;
-        if (two > one) {
-            System.out.println(two + " больше чем " + one);
-        } else {
-            System.out.println(one + " больше чем " + two);
-        }
-        if (three > two) {
-            System.out.println(three + " больше чем " + two);
+        if(three > two && three > one) {
+            System.out.println(three + " больше, чем " + two + " и " + one);
         }
     }
 }
+
+
+
 
 
 
