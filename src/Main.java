@@ -58,28 +58,35 @@ public class Main {
         }
         //Task#6
         System.out.println("Task 6 ");
-        int trainCapacity = 102;
-        int seatPlace = 60;
-        if (trainCapacity >= 0 && trainCapacity <= 100) {
-            System.out.println(trainCapacity + " в вагоне есть места");
-        } else if(seatPlace >=0 && seatPlace <=59) {
-            System.out.println(seatPlace + "в вагоне есть свободные сидения ");
+        int capacity = 102;
+        int numSeats = 60;
+        int numPassengers = 75;
 
+        if (numSeats > numPassengers) {
+            System.out.println("В вагоне есть свободные сидячие места.");
+        } else if (capacity > numPassengers) {
+            System.out.println("В вагоне есть свободные стоячие места.");
         } else {
-            System.out.println("Вагон полностью забит");
-
+            System.out.println("В вагоне нет свободных мест.");
         }
+
+
 
         //Task#7
         System.out.println("Task 7 ");
         int one = 1;
         int two = 2;
         int three = 3;
-        if(three > two && three > one) {
-            System.out.println(three + " больше, чем " + two + " и " + one);
+        if ( one  >= two && one >= three) {
+            System.out.println("Наибольшее число: " + one);
+        } else if (two >= one && two >= three) {
+            System.out.println("Наибольшее число: " + two);
+        } else {
+            System.out.println("Наибольшее число: " + three);
+        }
         }
     }
-}
+
 
 
 
