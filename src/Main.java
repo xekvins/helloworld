@@ -1,24 +1,16 @@
 public class Main {
 
     public static void main(String[] args) {
-        String nameJohn = "John";
-        int ageJohn = 13;
 
-        String nameSarah = "Sarah";
-        int ageSarah = 30;
+        Book book1  = new Book ("Martin Iden", "JAck London", 1909);
+        System.out.println("book1.getBookName() = " + book1.getBookName());
+        System.out.println("book1.getAuthor() = " + book1.getAuthor());
+        System.out.println("book1.getBookData() = " + book1.getBookData());
+        Book book2 = new Book("The little Prince", "Antuan De Sent Exupery", 1942);
+        System.out.println("book2.getBookName() = " + book2.getBookName());
+        System.out.println("book2.getAuthor() = " + book2.getAuthor());
+        System.out.println("book2.getBookData() = " + book2.getBookData());
 
-        String[] names = {"John", "Sarah"};
-        int[] ages = {13, 30};
-
-        for (int i = 0; i < names.length; i++) {
-            System.out.println("Name - " + names[i] + " age - " + ages[i]);
-        }
-        Person sarah = new Person("Sarah", 30);
-        System.out.println("sarah.name = " + sarah.getName());
-        System.out.println("sarah.age = " + sarah.getAge());
-        sarah.setAge(31);
-        System.out.println("sarah.getAge() = " + sarah.getAge());
-        Person john = new Person("John", 13);
 
     }
 }
