@@ -1,22 +1,23 @@
 public class Book {
-    private String bookName;
-    private String author;
+    private String book;
+    private Author author;
 
     private int bookData;
 
-    public Book(String bookName, String author, int bookData) {
-        this.bookName = bookName;
-        this.author = author;
+    public Book(String bookName, Author author, int bookData) {
+        this.book = bookName;
+        author = author;
         this.bookData = bookData;
 
     }
 
     public String getBookName() {
-        return this.bookName;
+        return this.book;
     }
 
-    public String getAuthor() {
-        return this.author;
+    public Author getAuthor() {
+        return author;
+
     }
 
     public int getBookData() {
